@@ -1,0 +1,15 @@
+PriorityQueue – это класс очереди с приоритетами. По умолчанию очередь с приоритетами размещает
+элементы согласно естественному порядку сортировки используя Comparable. Элементу с наименьшим
+значением присваивается наибольший приоритет. Если несколько элементов имеют одинаковый наивысший
+элемент – связь определяется произвольно.
+
+Также можно указать специальный порядок размещения, используя Comparator.
+
+Конструкторы класса PriorityQueue:
+-> PriorityQueue() - создает очередь с приоритетами начальной емкостью 11, размещающую элементы
+согласно естественному порядку сортировки (Comparable);
+-> PriorityQueue(Collection<? extends E> c);
+-> PriorityQueue(int initialCapacity);
+-> PriorityQueue(int initialCapacity, Comparator<? super E> comparator);
+-> PriorityQueue(PriorityQueue<? extends E> c);
+-> PriorityQueue(SortedSet<? extends E> c).
