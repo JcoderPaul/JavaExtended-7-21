@@ -55,6 +55,9 @@ public class Less_CollectionsTasks_4 {
                 );
         Map<Integer, Integer> mapToView = sumPolynom(polynom_1, polynom_2);
         System.out.println(viewFinalPolinom(mapToView));
+        System.out.println("----------------------------------------------");
+        Map<Integer, Integer> mapToViewTwo = sumPolynomTwo(polynom_1, polynom_2);
+        System.out.println(viewFinalPolinom(mapToViewTwo));
     }
     // Метод суммирует два полинома (многочлена)
     private static Map<Integer, Integer> sumPolynom(Map<Integer, Integer> poly_1,
@@ -138,5 +141,32 @@ public class Less_CollectionsTasks_4 {
         Подробнее см. StringJoin.txt
         */
         return String.join(" + ", listToScreen);
+    }
+
+    // Метод суммирует два полинома (многочлена) версия два
+    private static Map<Integer, Integer> sumPolynomTwo(Map<Integer, Integer> poly_1,
+                                                    Map<Integer, Integer> poly_2){
+        /*
+        Коллекция куда соберется сумма двух полиномов,
+        в данном случае мы сразу заполнили результирующую
+        коллекцию данными из первого полинома (как всегда,
+        исходные данные мы не меняем).
+        */
+        Map<Integer, Integer> poly_res = new HashMap<>(poly_1);
+        // Перебираем содержимое второго полинома
+        for (Map.Entry<Integer, Integer> entry: poly_2.entrySet()) {
+            /*
+            Все операции проделанные в первом методе *.sumPolynom()
+            и уложенные в 2-е строки, можно переписать в одну и снова
+            двумя равносильными синтаксическими конструкциями:
+            1. - poly_res.merge(entry.getKey(), entry.getValue(),
+                                           (newVol, oldVol) -> newVol + oldVol);
+
+            2. - poly_res.merge(entry.getKey(), entry.getValue(), Integer::sum);
+            */
+            poly_res.merge(entry.getKey(), entry.getValue(), Integer::sum);
+        }
+        // Возвращаем результат
+        return poly_res;
     }
 }
