@@ -18,10 +18,10 @@ map.merge(key, msg, String::concat)
 Если необходимо объединить значение в Map с другим под таким же ключом:
 ----------------------------------------------------------------------------
 Map<String, String> map = new HashMap<>();
-map.put("question", "Vasya");
-map.merge("question", " Bukin", (oldVal, newVal) -> oldVal + newVal);
+map.put("fio", "Vasya");
+map.merge("fio", " Bukin", (oldVal, newVal) -> oldVal + newVal);
 
-System.out.println(map.get("question"));
+System.out.println(map.get("fio"));
 // На экране: Vasya Bukin
 ----------------------------------------------------------------------------
 При этом, если такой пары в Map нет, она будет создана
