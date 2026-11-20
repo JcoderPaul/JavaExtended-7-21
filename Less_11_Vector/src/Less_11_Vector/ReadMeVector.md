@@ -59,3 +59,21 @@
 - `Object[] toArray(Object[] a)` - Возвращает массив, содержащий все элементы этого вектора в правильном порядке; тип выполнения возвращаемого массива - тип указанного массива.
 - `String toString()` - Возвращает строковое представление этого вектора, содержащее строковое представление каждого элемента.
 - `void trimToSize()` - Обрезает емкость этого вектора до текущего размера вектора.
+
+---
+**Доп. материалы:**
+- [Class Vector **(from oracle.com)**](https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html)
+- [Intro to Vector Class in Java **(from baeldung.com)**](https://www.baeldung.com/java-vector-guide)
+- [The Vector API in Java **(from baeldung.com)**](https://www.baeldung.com/java-vector-api)
+- [Java Vector](https://www.programiz.com/java-programming/vector)
+- [Vector Class in Java **(from geeksforgeeks.org)**](https://www.geeksforgeeks.org/java/java-util-vector-class-java/)
+- [Vector in Java](https://javatrainingschool.com/vector-in-java-2/)
+- [Java Vector](https://medium.com/@toimrank/java-vector-d6a0bdaa3eca)
+- [Vector in Java](https://www.scientecheasy.com/2020/09/vector-in-java.html/)
+- [Java Data Structures - Vector Class](https://www.tutorialspoint.com/java_data_structures/java_data_structures_vector_class.htm)
+- [Collection Framework – The Vector Class](https://javaconceptoftheday.com/collection-framework-vector-class/)
+- [Vector Example](https://tutorialsinhand.com/tutorials/java-tutorial/java-collection-programs/vector-example.aspx)
+- [Java Vector Basics: How Vectors Work In Java With Practical Examples](https://www.upgrad.com/blog/vector-in-java/)
+- [Java Vector Class Tutorial With Examples](https://www.softwaretestinghelp.com/java-vector-tutorial/)
+- [Java Vector](https://codegym.cc/groups/posts/java-vector)
+- [Как использовать классы - коллекции ArrayList, Vector и HashMap предоставляемые Java Collections Framework](https://javarush.com/groups/posts/702-kak-ispoljhzovatjh-klassih---kollekcii-arraylist-vector-i-hashmap-predostavljaemihe-java-collect)
