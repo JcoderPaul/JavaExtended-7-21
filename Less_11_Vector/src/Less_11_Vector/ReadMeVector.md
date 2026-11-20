@@ -65,10 +65,12 @@
 - [Class Vector **(from oracle.com)**](https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html)
 - [Intro to Vector Class in Java **(from baeldung.com)**](https://www.baeldung.com/java-vector-guide)
 - [The Vector API in Java **(from baeldung.com)**](https://www.baeldung.com/java-vector-api)
-- [Java Vector](https://www.programiz.com/java-programming/vector)
 - [Vector Class in Java **(from geeksforgeeks.org)**](https://www.geeksforgeeks.org/java/java-util-vector-class-java/)
+- [Java Vector **(from medium.com)**](https://medium.com/@toimrank/java-vector-d6a0bdaa3eca)
+
+---
+- [Java Vector](https://www.programiz.com/java-programming/vector)
 - [Vector in Java](https://javatrainingschool.com/vector-in-java-2/)
-- [Java Vector](https://medium.com/@toimrank/java-vector-d6a0bdaa3eca)
 - [Vector in Java](https://www.scientecheasy.com/2020/09/vector-in-java.html/)
 - [Java Data Structures - Vector Class](https://www.tutorialspoint.com/java_data_structures/java_data_structures_vector_class.htm)
 - [Collection Framework – The Vector Class](https://javaconceptoftheday.com/collection-framework-vector-class/)
