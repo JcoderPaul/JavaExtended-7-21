@@ -41,13 +41,13 @@ public class Stack<E>
 
 ---
 **Доп. материалы:**
-- [Stack Class in Java](https://www.geeksforgeeks.org/java/stack-class-in-java/)
-- [Quick Guide to the Java Stack](https://www.baeldung.com/java-stack)
-- [Java Stack: Class, Methods, Alternatives, and Implementation](https://www.happycoders.eu/algorithms/java-stack-class/)
-- [Java Stack](https://jenkov.com/tutorials/java-collections/stack.html)
-- [Java Stack Class Example](https://www.javaguides.net/2018/12/java-stack-class-example.html)
-- [Java implementation for stack](https://stackoverflow.com/questions/56827502/java-implementation-for-stack)
-- [Simple implementation of Stack](https://gist.github.com/sschakraborty/1b919e104bee4bb89fbaebc25b4c59a0)
+- [Stack Class in Java **(from geeksforgeeks.org)**](https://www.geeksforgeeks.org/java/stack-class-in-java/)
+- [Quick Guide to the Java Stack **(from baeldung.com)**](https://www.baeldung.com/java-stack)
+- [Java Stack: Class, Methods, Alternatives, and Implementation **(from happycoders.eu)**](https://www.happycoders.eu/algorithms/java-stack-class/)
+- [Java Stack **(from jenkov.com)**](https://jenkov.com/tutorials/java-collections/stack.html)
+- [Java Stack Class Example **(from javaguides.net)**](https://www.javaguides.net/2018/12/java-stack-class-example.html)
+- [Java implementation for stack **(from stackoverflow.com)**](https://stackoverflow.com/questions/56827502/java-implementation-for-stack)
+- [Simple implementation of Stack **(from gist.github.com)**](https://gist.github.com/sschakraborty/1b919e104bee4bb89fbaebc25b4c59a0)
 
 ---
 - [Stack Class in Java with Methods & Examples](https://www.naukri.com/code360/library/stack-class-in-java)
