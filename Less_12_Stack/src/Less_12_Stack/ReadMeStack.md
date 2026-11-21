@@ -11,12 +11,7 @@ java.lang.Object
         java.util.Stack<E>
 ```
 **Все реализованные интерфейсы:**
-- [Serializable](https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html),
-- [Cloneable](https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.html),
-- [Iterable<E>](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html),
-- [Collection<E>](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html),
-- [List<E>](https://docs.oracle.com/javase/8/docs/api/java/util/List.html),
-- [RandomAccess](https://docs.oracle.com/javase/8/docs/api/java/util/RandomAccess.html)
+- [Serializable](https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html), [Cloneable](https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.html), [Iterable<E>](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html), [Collection<E>](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html), [List<E>](https://docs.oracle.com/javase/8/docs/api/java/util/List.html), [RandomAccess](https://docs.oracle.com/javase/8/docs/api/java/util/RandomAccess.html).
 
 ```
 public class Stack<E>
@@ -28,7 +23,7 @@ public class Stack<E>
 [Vector](https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html), и самостоятельно добавляет 
 несколько своих собственных.
 
-Кроме методов, унаследованных от его родительского [класса Vector](../../../Less_11_Vector/ReadMeVector.md), Stack определяет следующие методы:
+Кроме методов, унаследованных от его родительского [класса Vector](../../../Less_11_Vector/src/Less_11_Vector/ReadMeVector.md), Stack определяет следующие методы:
 
 - `boolean empty()` - Проверяет, является ли стек пустым. Возвращает true, если стек пустой. Возвращает false, если стек содержит элементы.
 - `Object peek()` - Возвращает элемент, находящийся в верхней части стэка, но не удаляет его.
