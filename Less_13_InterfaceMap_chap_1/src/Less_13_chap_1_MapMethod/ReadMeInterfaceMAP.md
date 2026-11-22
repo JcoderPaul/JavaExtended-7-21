@@ -15,15 +15,55 @@
 
 **Все известные реализующие классы:** [AbstractMap](https://docs.oracle.com/javase/8/docs/api/java/util/AbstractMap.html), [Attributes](https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.html), [AuthProvider](https://docs.oracle.com/javase/8/docs/api/java/security/AuthProvider.html), [ConcurrentHashMap](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html), [ConcurrentSkipListMap](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html), [EnumMap](https://docs.oracle.com/javase/8/docs/api/java/util/EnumMap.html), [HashMap](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html), [Hashtable](https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html), [IdentityHashMap](https://docs.oracle.com/javase/8/docs/api/java/util/IdentityHashMap.html), [LinkedHashMap](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html), [PrinterStateReasons](https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/PrinterStateReasons.html), [Properties](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html), [Provider](https://docs.oracle.com/javase/8/docs/api/java/security/Provider.html), [RenderingHints](https://docs.oracle.com/javase/8/docs/api/java/awt/RenderingHints.html), [SimpleBindings](https://docs.oracle.com/javase/8/docs/api/javax/script/SimpleBindings.html), [TabularDataSupport](https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/TabularDataSupport.html), [TreeMap](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html), [UIDefaults](https://docs.oracle.com/javase/8/docs/api/javax/swing/UIDefaults.html), [WeakHashMap](https://docs.oracle.com/javase/8/docs/api/java/util/WeakHashMap.html),
 
-Имея ключ и значение, можно поместить значение в объект Map. После помещения значения,
-мы можем его получить, используя его ключ.
-Некоторые методы генерируют исключение NoSuchElementException, когда в вызываемой карте нет элементов.
-Исключение ClassCastException генерируется, когда объект несовместим с элементами на карте.
-Исключение NullPointerException генерируется, когда совершается попытка использовать нулевой объект,
-а ноль не допустим на карте (однако либо ключ, либо значение могут быть NULL).
-Исключение UnsupportedOperationException генерируется, когда совершается попытка изменить неизменяемую карту.
+```
+  public interface Map<K,V>
+```
 
-Метод и описание
+Объект, сопоставляющий ключи со значениями. Map-а не может содержать повторяющиеся ключи; каждый ключ может соответствовать не более чем одному значению.
+Этот интерфейс заменяет [класс Dictionary](https://docs.oracle.com/javase/8/docs/api/java/util/Dictionary.html), который был полностью абстрактным классом, 
+а не интерфейсом.
+
+Интерфейс Map предоставляет три представления коллекций, которые позволяют отображать содержимое Map-ы как набор ключей, коллекцию значений или набор 
+сопоставлений ключ-значение. Порядок элементов в Map-е определяется порядком, в котором итераторы в представлениях коллекций Map-ы возвращают свои элементы. 
+Некоторые реализации Map (карт), например [класс TreeMap](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html), гарантируют определенный порядок; 
+другие, например [класс HashMap](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html), этого не делают.
+
+**Примечание:** следует проявлять особую осторожность при использовании изменяемых объектов в качестве ключей Map-ы. Поведение Map-ы (карты) не определено, 
+если значение объекта изменяется таким образом, что это влияет на сравнения и на равенство, когда объект является ключом в Map-е. Особым случаем этого запрета 
+является то, что Map-а не может содержать саму себя в качестве ключа. Хотя Map-а может содержать саму себя в качестве значения, следует проявлять крайнюю 
+осторожность: методы [equals](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#equals-java.lang.Object-) и [hashCode](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#hashCode--) больше не являются корректно определенными для такой Map-ы.
+
+Все классы, реализующие Map-ы общего назначения, должны предоставлять два «стандартных» конструктора: конструктор void (без аргументов), создающий пустую Map-у, 
+и конструктор с одним аргументом типа Map, создающий новую Map-у (карту) с теми же сопоставлениями ключ-значение, что и его аргумент. По сути, последний 
+конструктор позволяет пользователю копировать любую Map-у, создавая эквивалентную Map-у нужного класса. Нет способа принудительно выполнить эту рекомендацию 
+(поскольку интерфейсы не могут содержать конструкторы), но все реализации Map (карт) общего назначения в JDK ей соответствуют.
+
+«Деструктивные» методы, содержащиеся в этом интерфейсе, то есть методы, изменяющие Map-у, с которой они работают, настроены на генерацию исключения [UnsupportedOperationException](https://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html), если эта Map-а не поддерживает данную операцию. В этом случае эти методы 
+могут, но не обязаны, генерировать исключение [UnsupportedOperationException](https://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html), 
+если вызов не окажет никакого влияния на Map-у. Например, вызов [putAll(Map) метода](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#putAll-java.util.Map-) 
+на неизменяемой Map-е может, но не обязан, генерировать исключение, если Map-а, отображения которой должны быть «наложены», пуста.
+
+Некоторые реализации Map имеют ограничения на ключи и значения, которые они могут содержать. Например, некоторые реализации запрещают ключи и значения со значением 
+null, а другие имеют ограничения на типы своих ключей. Попытка вставить недопустимый ключ или значение вызывает неконтролируемое исключение, обычно [NullPointerException](https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html) или [ClassCastException](https://docs.oracle.com/javase/8/docs/api/java/lang/ClassCastException.html). 
+Попытка проверить наличие недопустимого ключа или значения может вызвать исключение или просто вернуть false; некоторые реализации будут демонстрировать первое поведение, 
+а некоторые — второе. В более общем случае, попытка операции над недопустимым ключом или значением, завершение которой не приведет к вставке недопустимого элемента в Map, 
+может вызвать исключение или же завершиться успешно, по выбору реализации. Такие исключения помечены как «необязательные» в спецификации этого интерфейса.
+
+Многие методы в интерфейсах [Collections Framework](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html) определены [через equals метод](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#equals-java.lang.Object-). Например, спецификация метода [containsKey(Object key)](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#containsKey-java.lang.Object-) гласит: «возвращает true тогда и только тогда, когда эта Map-а содержит 
+отображение для ключа `k` такое, что (key==null ? k==null : key.equals(k)) ». Эту спецификацию не следует понимать как подразумевающую, что вызов Map.containsKey с 
+ненулевым аргументом key приведет к вызову key.equals(k) для любого ключа k . Реализации могут свободно использовать оптимизации, позволяющие избежать вызова метода 
+equals , например, путем предварительного сравнения хеш-кодов двух ключей. (Спецификация [Object.hashCode()](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#hashCode--) 
+гарантирует, что два объекта с неравными хеш-кодами не могут быть равны.) В более общем случае, реализации различных интерфейсов Collections Framework могут свободно 
+использовать указанное поведение базовых Objectметодов там, где разработчик сочтет это целесообразным.
+
+Некоторые операции с картой, выполняющие рекурсивный обход карты, могут завершиться ошибкой в ​​случае самореферентных экземпляров, когда карта прямо или косвенно содержит 
+саму себя. К ним относятся методы clone(), equals(), hashCode()и toString(). Реализации могут опционально обрабатывать сценарий самореферентности, однако большинство 
+современных реализаций этого не делают.
+
+Этот интерфейс является частью [Java Collections Framework](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/index.html).
+
+---
+**Метод и описание:**
 -> void clear() - Удаляет все пары ключей/значений в вызываемой карте.
 
 -> boolean containsKey(Object k) - Возвращает true, если вызываемая карта содержит k как ключ.
