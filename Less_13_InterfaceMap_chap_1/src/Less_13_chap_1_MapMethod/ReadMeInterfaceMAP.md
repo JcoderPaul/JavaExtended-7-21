@@ -64,38 +64,36 @@ equals , например, путем предварительного срав�
 
 ---
 **Метод и описание:**
--> void clear() - Удаляет все пары ключей/значений в вызываемой карте.
 
--> boolean containsKey(Object k) - Возвращает true, если вызываемая карта содержит k как ключ.
-В противном случае, возвращает false.
-
--> boolean containsValue(Object v) - Возвращает true, если карта содержит v как значение.
-В противном случае, возвращает false.
-
--> Set entrySet() - Возвращает набор, содержащий записи на карте. Набор содержит объекты типа Map.Entry.
-Этот метод обеспечивает просмотр набора вызывающей карты.
-
--> boolean equals(Object obj) - Возвращает true, если obj является Map и содержит одинаковые записи.
-В противном случае, возвращает false.
-
--> Object get(Object k) - Возвращает значение, связанное с ключом k.
-
--> int hashCode() - Возвращает хэш-код для вызываемой карты.
-
--> boolean isEmpty() - Возвращает true, если вызываемая карта пустая. В противном случае, возвращает false.
-
--> Set keySet() - Возвращает набор, который содержит ключи в вызываемой карте. Этот метод предоставляет
-набор ключей на вызывающей карте.
-
--> Object put(Object k, Object v) - Вставляет запись в вызываемую карту, перезаписывая любое предыдущее
-значение, связанное с ключом. Ключ и значения соответствуют k и v. Возвращает ноль, если ключ ещё не
+- `void clear()` - Удаляет все пары ключей/значений в вызываемой карте.
+- `boolean containsKey(Object k)` - Возвращает true, если вызываемая карта содержит k как ключ. В противном случае, возвращает false.
+- `boolean containsValue(Object v)` - Возвращает true, если карта содержит v как значение. В противном случае, возвращает false.
+- `Set entrySet()` - Возвращает набор, содержащий записи на карте. Набор содержит объекты типа Map.Entry. Этот метод обеспечивает просмотр набора вызывающей карты.
+- `boolean equals(Object obj)` - Возвращает true, если obj является Map и содержит одинаковые записи. В противном случае, возвращает false.
+- `Object get(Object k)` - Возвращает значение, связанное с ключом k.
+- `int hashCode()` - Возвращает хэш-код для вызываемой карты.
+- `boolean isEmpty()` - Возвращает true, если вызываемая карта пустая. В противном случае, возвращает false.
+- `Set keySet()` - Возвращает набор, который содержит ключи в вызываемой карте. Этот метод предоставляет набор ключей на вызывающей карте.
+- `Object put(Object k, Object v)` - Вставляет запись в вызываемую карту, перезаписывая любое предыдущее значение, связанное с ключом. Ключ и значения соответствуют k и v. Возвращает ноль, если ключ ещё не
 существует. В противном случае возвращается предыдущее значение, связанное с ключом.
+- `void putAll(Map m)` - Вставляет все записи из m в эту карту.
+- `Object remove(Object k)` - Удаляет запись, чей ключ равен k.
+- `int size()` - Возвращает количество пар ключей/значений в карте.
+- `Collection values()` - Возвращает коллекцию значений в Map-е. Этот метод предоставляет просмотр значений в Map-e (карте).
 
--> void putAll(Map m) - Вставляет все записи из m в эту карту.
+---
+**Доп. материалы:**
+- [`Interface Map<K,V>` **(from openjdk.org)**](https://cr.openjdk.org/~pminborg/panama/21/v1/javadoc/java.base/java/util/Map.html)
+- [Java Map] **(from w3schools.com)**(https://www.w3schools.com/java/java_map.asp)
+- [Map Interface in Java **(geeksforgeeks.org/)**](https://www.geeksforgeeks.org/java/map-interface-in-java/)
+- [Map Interface in Java](https://codegym.cc/groups/posts/221-map-interface-and-its-implementations-java-hashmap-linkedhashmap-and-treemap-examples)
+- [Unlocking the Power of the Map Interface in Java](https://medium.com/@pratik.941/unlocking-the-power-of-the-map-interface-in-java-6e1dcfd93b06)
+- [Complete Guide to Map Interface in Java](https://www.upgrad.com/tutorials/software-engineering/java-tutorial/map-in-java/)
+- [Java Map Interface](https://www.tpointtech.com/java-map)
+- [Java - Map Interface](https://www.tutorialspoint.com/java/java_map_interface.htm)
+- [Ответы на самые популярные вопросы об интерфейсе Map](https://javarush.com/groups/posts/2542-otvetih-na-samihe-populjarnihe-voprosih-ob-interfeyse-map)
+- [Java Map **(from jenkov.com)**](https://jenkov.com/tutorials/java-collections/map.html)
 
--> Object remove(Object k) - Удаляет запись, чей ключ равен k.
-
--> int size() - Возвращает количество пар ключей/значений в карте.
-
--> Collection values() - Возвращает коллекцию значений в карте. Этот метод предоставляет просмотр
-значений в карте.
+---
+**Авторы на Medium:**
+- [Pratik T](https://medium.com/@pratik.941)
