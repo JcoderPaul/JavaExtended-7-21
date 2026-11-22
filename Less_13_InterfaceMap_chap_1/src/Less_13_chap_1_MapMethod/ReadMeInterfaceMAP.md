@@ -84,7 +84,7 @@ equals , например, путем предварительного срав�
 ---
 **Доп. материалы:**
 - [`Interface Map<K,V>` **(from openjdk.org)**](https://cr.openjdk.org/~pminborg/panama/21/v1/javadoc/java.base/java/util/Map.html)
-- [Java Map] **(from w3schools.com)**(https://www.w3schools.com/java/java_map.asp)
+- [Java Map **(from w3schools.com)**](https://www.w3schools.com/java/java_map.asp)
 - [Map Interface in Java **(geeksforgeeks.org/)**](https://www.geeksforgeeks.org/java/map-interface-in-java/)
 - [Map Interface in Java](https://codegym.cc/groups/posts/221-map-interface-and-its-implementations-java-hashmap-linkedhashmap-and-treemap-examples)
 - [Unlocking the Power of the Map Interface in Java](https://medium.com/@pratik.941/unlocking-the-power-of-the-map-interface-in-java-6e1dcfd93b06)
