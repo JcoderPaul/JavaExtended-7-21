@@ -3,7 +3,7 @@
 ---
 ### Интерфейс Map 
 
-**Пакет:** [java.util])(https://docs.oracle.com/javase/8/docs/api/java/util/package-summary.html)
+**Пакет:** [java.util](https://docs.oracle.com/javase/8/docs/api/java/util/package-summary.html)
 
 **Типовые параметры:**
 - `K` - тип ключей, используемых в этой Map-e (карте);
