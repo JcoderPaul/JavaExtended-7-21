@@ -93,7 +93,7 @@ lowerBound до элемента с ключом upperBound. Параметры 
 - [Особенности TreeMap в Java](https://javarush.com/groups/posts/2584-osobennosti-treemap)
 
 ---
-### TreeMap
+### Class TreeMap
 
 - [`Class TreeMap<K,V>`](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html)
 
