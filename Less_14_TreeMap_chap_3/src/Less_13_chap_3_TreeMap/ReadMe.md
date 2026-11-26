@@ -92,25 +92,43 @@ lowerBound до элемента с ключом upperBound. Параметры 
 - [Интерфейсы SortedMap и NavigableMap. Класс TreeMap](https://webhamster.ru/mytetrashare/index/mtb426/1572572010qd0btbeilg)
 - [Особенности TreeMap в Java](https://javarush.com/groups/posts/2584-osobennosti-treemap)
 
+---
+### TreeMap
 
-****************************************** TreeMap ******************************************
+- [`Class TreeMap<K,V>`](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html)
 
-Класс TreeMap<K, V> представляет отображение в виде дерева. Он наследуется от класса AbstractMap и
+```
+public class TreeMap<K,V> extends AbstractMap<K,V>
+  implements NavigableMap<K,V>, Cloneable, Serializable
+```
+
+**Типовые параметры:**
+- **K** - тип ключей, используемых в этой карте
+- **V** - тип отображаемых значений
+
+**Все реализованные интерфейсы:** [Serializable](https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html), [Cloneable](https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.html), [`Map <K,V>`](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html), [`NavigableMap <K,V>`](https://docs.oracle.com/javase/8/docs/api/java/util/NavigableMap.html), [`SortedMap <K,V>`](https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html)
+
+Класс `TreeMap<K, V>` представляет отображение в виде дерева. Он наследуется от класса AbstractMap и
 реализует интерфейс NavigableMap, а следовательно, также и интерфейс SortedMap. Поэтому в отличие от
 коллекции HashMap в TreeMap все объекты автоматически сортируются по возрастанию их ключей.
 
 Класс TreeMap имеет следующие конструкторы:
+- `TreeMap()` - создает пустое отображение в виде дерева
+- `TreeMap(Map<? extends K, ? extends V> 'map')` - создает дерево, в которое добавляет все элементы из отображения 'map'
+- `TreeMap(SortedMap<K, ? extends V> 'smap')` - создает дерево, в которое добавляет все элементы из отображения 'smap'
+- `TreeMap(Comparator<? super K> comparator)` - создает пустое дерево, где все добавляемые элементы впоследствии будут отсортированы компаратором.
 
-TreeMap(): создает пустое отображение в виде дерева
-
-TreeMap(Map<? extends K, ? extends V> 'map'): создает дерево, в которое добавляет все
-элементы из отображения 'map'
-
-TreeMap(SortedMap<K, ? extends V> 'smap'): создает дерево, в которое добавляет все элементы
-из отображения 'smap'
-
-TreeMap(Comparator<? super K> comparator): создает пустое дерево, где все добавляемые элементы
-впоследствии будут отсортированы компаратором.
+---
+**Доп. материалы:**
+- [Java TreeMap: Sorted Keys, floorKey(), subMap() and headMap()](https://howtodoinjava.com/java/collections/treemap-class/)
+- [Java TreeMap](https://www.w3schools.com/java/java_treemap.asp)
+- [A Guide to TreeMap in Java](https://www.baeldung.com/java-treemap)
+- [Java TreeMap Class](https://www.tpointtech.com/java-treemap)
+- [TreeMap in Java](https://www.geeksforgeeks.org/java/treemap-in-java/)
+- [Класс TreeMap](https://code.mu/ru/java/manual/collection/class/TreeMap/)
+- [TreeMap in Java](https://codegym.cc/groups/posts/297-features-of-treemap)
+- [Знакомство с коллекцией TreeMap](https://javarush.com/quests/lectures/jru.module1.lecture20)
+- [Особенности TreeMap в Java](https://javarush.com/groups/posts/2584-osobennosti-treemap)
 
 ---
 **Collection tutorial by Aditya Harendra Mall:**
