@@ -1,7 +1,6 @@
-- [`Interface SortedMap<K,V>`](https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html)
-
----
 ### Interface SortedMap
+
+- [`Interface SortedMap<K,V>`](https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html)
 
 ```
 public interface SortedMap<K,V>
@@ -36,10 +35,9 @@ public interface SortedMap<K,V>
 - [Интерфейс SortedMap](https://proglang.su/java/sortedmap-interface)
 
 ---
-- [`Interface NavigableMap<K,V>`](https://docs.oracle.com/javase/8/docs/api/java/util/NavigableMap.html)
-
----
 ### Interface NavigableMap
+
+- [`Interface NavigableMap<K,V>`](https://docs.oracle.com/javase/8/docs/api/java/util/NavigableMap.html)
 
 ```
 public interface NavigableMap<K,V> 
@@ -83,17 +81,16 @@ lowerBound до элемента с ключом upperBound. Параметры 
 
 ---
 **Доп. материалы:**
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [NavigableMap Interface in Java](https://www.geeksforgeeks.org/java/navigablemap-interface-in-java-with-example/)
+- [Java NavigableMap Interface](https://www.programiz.com/java-programming/navigablemap)
+- [TreeMap, SortedMap and NavigableMap in Java](https://www.examclouds.com/java/java-core/java-treemap-navigablemap)
+- [Java NavigableMap](https://jenkov.com/tutorials/java-collections/navigablemap.html)
+- [NavigableMap vs SortedMap in Java](https://www.javaguides.net/2023/11/navigablemap-vs-sortedmap-in-java.html)
+- [Java NavigableMap Tutorial with Examples](https://o7planning.org/13447/java-navigablemap)
+- [NavigableMap in Java](https://www.scientecheasy.com/2021/01/navigablemap-in-java.html/)
+- [What is NavigableMap in Java ? TreeMap, headMap, tailMap, and subMap Examples](https://javarevisited.blogspot.com/2013/01/what-is-navigablemap-in-java-6-example-submap-head-tail.html)
+- [Интерфейсы SortedMap и NavigableMap. Класс TreeMap](https://webhamster.ru/mytetrashare/index/mtb426/1572572010qd0btbeilg)
+- [Особенности TreeMap в Java](https://javarush.com/groups/posts/2584-osobennosti-treemap)
 
 
 ****************************************** TreeMap ******************************************
